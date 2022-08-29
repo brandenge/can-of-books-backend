@@ -1,6 +1,6 @@
 # Project Name
 
-**Author**: Team Member Names Goes Here
+**Authors**: Branden Ge and Robert Shepley
 **Version**: [1.0.0](https://img.shields.io/github/package-json/v/brandenge/can-of-books-backend)
 
 ## Overview
