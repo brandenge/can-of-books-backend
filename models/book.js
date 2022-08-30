@@ -7,9 +7,9 @@ const { Schema } = mongoose;
 const bookSchema = new Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
-  status: { type: String, required: true }
+  status: { type: Boolean, required: true }
 });
 
-const bookModel = mongoose.model('Book', bookSchema);
+const Book = mongoose.model('Book', bookSchema);
 
-module.exports = bookSchema;
+module.exports = Book;
