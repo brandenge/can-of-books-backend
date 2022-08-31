@@ -51,6 +51,19 @@ async function postBook(req, res, next) {
   }
 }
 
+app.put('/books/:bookid', putBook);
+
+async function putBook(req, res, next) {
+  const id = req.params.bookid;
+  try {
+    const data = req.body;
+    const updateBook = await Book.findByIdAndUpdate(id, data, { new: true });
+    res.status(201).send(updateBook);
+  } catch (error) {
+    next(error);
+  }
+}
+
 app.delete('/books/:bookid', deleteBook);
 
 async function deleteBook(req, res, next) {
