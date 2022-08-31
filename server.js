@@ -9,7 +9,6 @@ const mongoose = require('mongoose');
 const Book = require('./models/book.js');
 const { response } = require('express');
 
-
 // Connect Mongoose to MongoDB
 mongoose.connect(process.env.DB_URL);
 
@@ -47,6 +46,20 @@ async function postBook(req, res, next) {
     console.log(req.body);
     const newBook = await Book.create(req.body);
     res.status(201).send(newBook);
+  } catch (error) {
+    next(error);
+  }
+}
+
+app.delete('/books/:bookid', deleteBook);
+
+async function deleteBook(req, res, next) {
+  const id = req.params.bookid;
+  console.log(req.params);
+  console.log(id);
+  try {
+    await Book.findByIdAndDelete(id);
+    res.status(204).send('success!');
   } catch (error) {
     next(error);
   }
