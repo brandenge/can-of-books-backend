@@ -33,29 +33,35 @@ mv .env.sample .env
 ## Architecture
 <!-- Provide a detailed description of the application design. What technologies (languages, libraries, etc) you're using, and any other relevant design information. -->
 
+This project uses Express.js, dotenv, cors, Mongoose, and MongoDB. This backend is connecting to a database in a cluster on the cloud in MongoDB Atlas, using Mongoose.
 
 ## Change Log
 <!-- Use this area to document the iterative changes made to your application as each feature is successfully implemented. Use time stamps. Here's an example:
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 08-29-2022 - Application has a back-end with a functioning MongoDB database on a cluster in the cloud.
+08-29-2022 - Application is sending data from the database to the front-end.
+08-30-2022 - Added POST and DELETE methods to the backend.
 
 ## Estimates
 <!-- See below -->
 
 ### August 29, 2022
 
-| Feature Name | Estimated Time | Start Time | Finish Time |
-| ------------ | -------------- | ---------- | ----------- |
-| Initial Setup | 2 Hours | 3:00PM | 5:00PM |
-| Storage       | 2 hours | 5:00PM | 7:00PM |
-| Book Component |
+| Feature Name | Estimated Time | Start Time | Finish Time | Actual Time |
+| ------------ | -------------- | ---------- | ----------- | ----------- |
+| Initial Setup | 2 Hours | 3:00PM | 5:00PM | 2 hours |
+| Storage       | 2 hours | 5:00PM | 7:00PM | 2 hours |
+| Book Component | 2 hours | 7:00PM | 9:00PM | 2 hours |
+| Add a new book | 2 hours | 6:15PM | 8:15PM | 2 hours |
+| Delete a book | 2 hours | 8:15PM | 9:45PM | 1.5 hours |
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 
 Audrey Peterson and Code Fellows demo code
 [Lab 11](https://github.com/codefellows/seattle-code-301d88/tree/main/class-11/in-class-demo)
+[Lab 12](https://github.com/codefellows/seattle-code-301d88/tree/main/class-12/in-class-demo)
 
 Created from a template repository from Code Fellows
 [Template Repository](https://github.com/codefellows/can-of-books-backend-template)
