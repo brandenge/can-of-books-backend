@@ -10,23 +10,26 @@ async function seed() {
   await Book.create({
     title: 'The Way of Kings',
     description: 'This is a good book.',
-    status: true,
+    author: 'Tom',
+    status: true
   });
-  console.log('TWoK was added.')
+  console.log('TWoK was added.');
 
   await Book.create({
     title: 'Hold on to Your Kids',
     description: 'This is a good book.',
-    status: false,
-  })
-  console.log("HotYK was added.")
+    author: 'Bob',
+    status: false
+  });
+  console.log("HotYK was added.");
 
   await Book.create({
     title: 'Third Book',
     description: 'This is not such a good book.',
-    status: false,
-  })
-  console.log("Third Book is added.")
+    author: 'Mike',
+    status: false
+  });
+  console.log("Third Book is added.");
 
   mongoose.disconnect();
 }

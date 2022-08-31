@@ -40,21 +40,21 @@ This project uses Express.js, dotenv, cors, Mongoose, and MongoDB. This backend 
 
 01-01-2001 4:59pm - Application now has a fully-functional express server, with a GET route for the location resource. -->
 08-29-2022 - Application has a back-end with a functioning MongoDB database on a cluster in the cloud.
-08-29-2022 - Application is sending data from the database to the front-end
-08-30-2022 -
+08-29-2022 - Application is sending data from the database to the front-end.
+08-30-2022 - Added POST and DELETE methods to the backend.
 
 ## Estimates
 <!-- See below -->
 
 ### August 29, 2022
 
-| Feature Name | Estimated Time | Start Time | Finish Time |
-| ------------ | -------------- | ---------- | ----------- |
-| Initial Setup | 2 Hours | 3:00PM | 5:00PM |
-| Storage       | 2 hours | 5:00PM | 7:00PM |
-| Book Component | 2 hours | 7:00PM | 9:00PM |
-| Add a new book | 2 hours | 6:15PM |
-| Delete a book | 2 hours |
+| Feature Name | Estimated Time | Start Time | Finish Time | Actual Time |
+| ------------ | -------------- | ---------- | ----------- | ----------- |
+| Initial Setup | 2 Hours | 3:00PM | 5:00PM | 2 hours |
+| Storage       | 2 hours | 5:00PM | 7:00PM | 2 hours |
+| Book Component | 2 hours | 7:00PM | 9:00PM | 2 hours |
+| Add a new book | 2 hours | 6:15PM | 8:15PM | 2 hours |
+| Delete a book | 2 hours | 8:15PM |
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
