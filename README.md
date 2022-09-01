@@ -55,6 +55,7 @@ This project uses Express.js, dotenv, cors, Mongoose, and MongoDB. This backend 
 | Book Component | 2 hours | 7:00PM | 9:00PM | 2 hours |
 | Add a new book | 2 hours | 6:15PM | 8:15PM | 2 hours |
 | Delete a book | 2 hours | 8:15PM | 9:45PM | 1.5 hours |
+|
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
