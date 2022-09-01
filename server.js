@@ -43,9 +43,21 @@ app.post('/books', postBook);
 
 async function postBook(req, res, next) {
   try {
-    console.log(req.body);
     const newBook = await Book.create(req.body);
     res.status(201).send(newBook);
+  } catch (error) {
+    next(error);
+  }
+}
+
+app.put('/books/:bookid', putBook);
+
+async function putBook(req, res, next) {
+  const id = req.params.bookid;
+  try {
+    const data = req.body;
+    const updateBook = await Book.findByIdAndUpdate(id, data, { new: true, runValidators: true });
+    res.status(201).send(updateBook);
   } catch (error) {
     next(error);
   }
@@ -55,8 +67,6 @@ app.delete('/books/:bookid', deleteBook);
 
 async function deleteBook(req, res, next) {
   const id = req.params.bookid;
-  console.log(req.params);
-  console.log(id);
   try {
     await Book.findByIdAndDelete(id);
     res.status(204).send('success!');
