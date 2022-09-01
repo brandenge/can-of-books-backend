@@ -42,6 +42,7 @@ This project uses Express.js, dotenv, cors, Mongoose, and MongoDB. This backend 
 08-29-2022 - Application has a back-end with a functioning MongoDB database on a cluster in the cloud.
 08-29-2022 - Application is sending data from the database to the front-end.
 08-30-2022 - Added POST and DELETE methods to the backend.
+08-31-2022 - Added PUT method and validation.
 
 ## Estimates
 <!-- See below -->
@@ -55,7 +56,7 @@ This project uses Express.js, dotenv, cors, Mongoose, and MongoDB. This backend 
 | Book Component | 2 hours | 7:00PM | 9:00PM | 2 hours |
 | Add a new book | 2 hours | 6:15PM | 8:15PM | 2 hours |
 | Delete a book | 2 hours | 8:15PM | 9:45PM | 1.5 hours |
-|
+| Update a book | 2 hours | 4:15PM | 7:45PM | 3.5 hours |
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
@@ -63,6 +64,7 @@ This project uses Express.js, dotenv, cors, Mongoose, and MongoDB. This backend 
 Audrey Peterson and Code Fellows demo code
 [Lab 11](https://github.com/codefellows/seattle-code-301d88/tree/main/class-11/in-class-demo)
 [Lab 12](https://github.com/codefellows/seattle-code-301d88/tree/main/class-12/in-class-demo)
+[Lab 13](https://github.com/codefellows/seattle-code-301d88/tree/main/class-13/in-class-demo)
 
 Created from a template repository from Code Fellows
 [Template Repository](https://github.com/codefellows/can-of-books-backend-template)
